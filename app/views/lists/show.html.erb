@@ -1,3 +1,8 @@
 <h1>Your List Details..👇🏾</h1>
 
 <%= @list.name %>
+
+<%# <%= @bookmark.comment  %>
+<% @list.movies.each do |movie| %>
+<%= movie.title %>
+<% end %>
