@@ -1,6 +1,24 @@
-<h1>List</h1>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://wallpapercave.com/wp/24t2Yct.jpg);">
+  <div class="container">
+    <h1> Your Movie Lists</h1>
+    <p>View and Customise your lists</p>
+    <a href="#lists" class="btn btn-flat">Go To Lists</a>
+  </div>
+</div>
+<div id="lists">
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.picsum.photos/id/1050/6000/4000.jpg?hmac=HhCXFcOrIrNguK7GqP6VhICXPa5FmcLZdug505qiEZM)">
+  Lists
+</div>
+<div class="cards">
 <% @lists.each do |list|%>
-<%= link_to list.name, list%>
-<br>
-<br>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/200/300)">
+
+    <div class="titles">
+     <%= link_to list.name, list%>
+    </div>
+
+  </div>
 <% end %>
+</div>
+</div>
